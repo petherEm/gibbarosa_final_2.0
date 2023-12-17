@@ -1,4 +1,8 @@
 {
   "/page": "app/page.js",
-  "/koszyknew/page": "app/koszyknew/page.js"
+  "/api/pcheckout/route": "app/api/pcheckout/route.js",
+  "/koszyknew/page": "app/koszyknew/page.js",
+  "/nowosci/page": "app/nowosci/page.js",
+  "/produkt/[slug]/page": "app/produkt/[slug]/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

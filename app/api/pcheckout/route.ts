@@ -47,7 +47,7 @@ export async function POST(req: Request) {
         email: "john.doe@example.com",
         country: Country.Poland,
         language: Language.PL,
-        channel: "8192",
+        channel: Number(8192),
         urlReturn: "http://localhost:3000/nowosci",
         urlStatus: "http://localhost:3000",
         timeLimit: 20,

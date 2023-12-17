@@ -1,26 +1,26 @@
 {
   "node": {
-    "0956497c4c7c44cbf0a05787269fc7df5bcb5f2d": {
-      "workers": {
-        "app/koszyknew/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22getAllProducts%22%2C%22updatePaymentStatus%22%5D%5D%5D&__client_imported__=true!",
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=!"
-      },
-      "layer": {
-        "app/koszyknew/page": "action-browser",
-        "app/page": "rsc"
-      }
-    },
     "411a0c7eb8a72da187b8fee0a90e28a51fd59d16": {
       "workers": {
-        "app/koszyknew/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22getAllProducts%22%2C%22updatePaymentStatus%22%5D%5D%5D&__client_imported__=true!",
-        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=!"
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=!",
+        "app/koszyknew/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=true!"
       },
       "layer": {
-        "app/koszyknew/page": "action-browser",
-        "app/page": "rsc"
+        "app/page": "rsc",
+        "app/koszyknew/page": "action-browser"
+      }
+    },
+    "0956497c4c7c44cbf0a05787269fc7df5bcb5f2d": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=!",
+        "app/koszyknew/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpm%2FDesktop%2FPM_works%2FWIP_GibbarosaProdP24%2Flib%2Factions%2Fproduct.actions.ts%22%2C%5B%22updatePaymentStatus%22%2C%22getAllProducts%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/koszyknew/page": "action-browser"
       }
     }
   },
   "edge": {},
-  "encryptionKey": "9aV/tW8mdK3J86wLcrbYCrwxIJQAQxwbqJTcL4dEDc8="
+  "encryptionKey": "8NpU8+ZfeGLLNxDdptQ+IuKe5AviYi3lLTXb84YZgoo="
 }
