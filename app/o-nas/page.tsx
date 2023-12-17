@@ -1,0 +1,86 @@
+import Image from "next/image";
+import Link from "next/link";
+import { client } from "@/lib/sanity";
+import { simplifiedProduct } from "@/interface";
+
+import { Button } from "@/components/ui/button";
+
+import YouMayLike from "@/components/YouMayLike";
+import MidBanner from "@/components/MidBanner";
+import Newsletter from "@/components/Newsletter";
+
+async function getData() {
+  const query = `*[_type == "product" && isNewest == true] {
+    _id,
+      isNewest,
+      price,
+      name,
+      brand,
+      "slug": slug.current,
+      "categoryName": category -> name,
+      "imageUrl": images[0].asset->url,
+      "imageUrl2": images[1].asset->url
+      
+  }`;
+  const data = await client.fetch(query);
+
+  return data;
+}
+
+const About = async () => {
+  const data: simplifiedProduct[] = await getData();
+
+  return (
+    <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
+      <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
+        <div className="mt-20 flex flex-col-reverse flex-wrap justify-between md:items-center md:space-x-6 md:flex-row md:mb-16">
+          <div className="flex flex-col w-full">
+            <h2 className="h2">Poznaj naszą historię</h2>
+            <p className="w-1/2 text-[#3E3E59] leading-relaxed">
+              Marka Gibbarosa powstała z miłości do mody, designu i luksusowych
+              marek, a przede wszystkim do ponadczasowych, jakościowych
+              produktów.
+            </p>
+            <Button className="mt-8 text-white bg-black w-fit">
+              Więcej informacji
+            </Button>
+          </div>
+        </div>
+        {/* LISTING */}
+        <div className="mt-20 flex flex-col-reverse flex-wrap justify-between md:items-center md:space-x-6 md:flex-row md:mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 space-x-8">
+            {data.map((item) => (
+              <Link
+                href={`/produkt/${item.slug}`}
+                key={item._id}
+                className="min-w-[310px] min-h-[530px] shadow-lg"
+              >
+                <Image
+                  src={item.imageUrl}
+                  width={310}
+                  height={414}
+                  alt={item.name}
+                  className="object-cover object-center"
+                />
+                <div className="p-4">
+                  <p className="text-lg">{item.brand}</p>
+                  <h3 className="font-bold text-xl">{item.name}</h3>
+                  <p className="font-semibold">{item.price} PLN</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* YOU MAY ALSO LIKE */}
+      <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
+        <YouMayLike title="Nasi ulubieńcy" />
+      </section>
+      {/* MID BANNER */}
+      <MidBanner />
+      <Newsletter />
+    </div>
+  );
+};
+
+export default About;

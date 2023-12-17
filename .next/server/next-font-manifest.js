@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/pm/Desktop/PM_works/WIP_GibbarosaProdP24/app/layout\":[\"static/media/c9a5bc6a7c948fb0-s.p.woff2\",\"static/media/c6908836934a19a7-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
